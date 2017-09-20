@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>GitSearch Repository</title>
+
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/simple.css">
+
+
+</head>
+<body>
+    <div class="container">
+        <div class="alert alert-danger fade show d-none" role="alert" id="alert">
+            <strong>Oh!</strong> Something gone wrong...
+        </div>
+        <div class="row justify-content-center">
+
+            <div class="col-lg-6 form-inline">
+
+                    <div class="form-group mx-3">
+                        <input type="text" class="form-control" id="mask" placeholder="Git repository name">
+                    </div>
+
+                    <button type="submit" id="submitButton" class="btn btn-primary">Submit</button>
+            </div>
+        </div>
+        <div class="row justify-content-center py-3">
+            <div class="col-lg-6">
+                <div class="form-check mx-3">
+                    <label class="custom-control custom-checkbox">
+                        <input type="checkbox" class="custom-control-input" data-val="javascript" checked id="js-check">
+                        <span class="custom-control-indicator"></span>
+                        <span class="custom-control-description">JS</span>
+                    </label>
+                    <label class="custom-control custom-checkbox">
+                        <input type="checkbox" class="custom-control-input" data-val="php" checked id="php-check">
+                        <span class="custom-control-indicator"></span>
+                        <span class="custom-control-description">PHP</span>
+                    </label>
+                </div>
+            </div>
+        </div>
+
+        <div class="row justify-content-center py-3">
+            <div class="col-lg-10">
+                <div class="card d-none" id="results">
+                    <div class="card-block">
+                        <h4 class="card-title">Results <span id="repoCount"></span></h4>
+                        <div class="card-text">
+                            <table class="table table-hover" id="resultsTable">
+                                <thead>
+                                <tr>
+                                    <th>Name/URL</th>
+                                    <th>Username</th>
+                                    <th>Language</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <button type="submit" id="moreButton" class="btn btn-primary mx-3 my-3">More <s>Cookies</s> Repositories</button>
+                </div>
+
+
+            </div>
+
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="js/main.js"></script>
+
+</body>
+</html>
